@@ -44,7 +44,7 @@ public class StudentDataBase {
         Student s6 = Student.builder()
                 .name("James")
                 .gradeLevel(4)
-                .gpa(3.6)
+                .gpa(3.9)
                 .gender("male")
                 .activities(Arrays.asList("swimming", "basketball", "baseball", "football"))
                 .build();
