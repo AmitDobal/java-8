@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class PredicateStudentExample {
-    static Predicate<Student> p = student -> student.getGradeLevel() > 2;
-    static Predicate<Student> p1 = student -> student.getGpa() >= 3.9;
+    static Predicate<Student> gradeFilterPredicate = student -> student.getGradeLevel() > 2;
+    static Predicate<Student> gpaFilterPredicate = student -> student.getGpa() >= 3.9;
 
     public static void main(String[] args) {
         filterStudentByGradeLevel();
@@ -20,7 +20,7 @@ public class PredicateStudentExample {
         List<Student> studentList = StudentDataBase.getAllStudents();
 
         studentList.forEach(student -> {
-            if (p.test(student)) {
+            if (gradeFilterPredicate.test(student)) {
                 System.out.println(student);
             }
         });
@@ -30,7 +30,7 @@ public class PredicateStudentExample {
         List<Student> studentList = StudentDataBase.getAllStudents();
 
         studentList.forEach(student -> {
-            if (p1.test(student)) {
+            if (gpaFilterPredicate.test(student)) {
                 System.out.println(student);
             }
         });
