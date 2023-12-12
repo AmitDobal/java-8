@@ -2,8 +2,11 @@ package com.learnJava.data;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class StudentDataBase {
+
+    public static Supplier<Student> getStudent = () -> getAllStudents().get(0);
 
     public static List<Student> getAllStudents() {
         Student s1 = Student.builder()

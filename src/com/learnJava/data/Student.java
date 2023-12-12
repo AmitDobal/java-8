@@ -7,6 +7,7 @@ import java.util.List;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class Student {
     private String name;
@@ -14,7 +15,12 @@ public class Student {
     private double gpa;
     private String gender;
     List<String> activities = new ArrayList<>();
-    public void printListOfActivities(){
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    public void printListOfActivities() {
         System.out.println(activities);
     }
 }
