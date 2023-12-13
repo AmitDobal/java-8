@@ -26,5 +26,7 @@ public class StreamsExample {
 */
         studentMap.forEach((name, activities) -> System.out.println(name + "\t" + activities));
 //        System.out.println(studentMap);
+
+
     }
 }
