@@ -15,6 +15,7 @@ public class StudentDataBase {
                 .gpa(3.6)
                 .gender("male")
                 .activities(Arrays.asList("swimming", "basketball", "volleyball"))
+                .noteBooks(11)
                 .build();
         Student s2 = Student.builder()
                 .name("Jenny")
@@ -22,6 +23,7 @@ public class StudentDataBase {
                 .gpa(3.8)
                 .gender("female")
                 .activities(Arrays.asList("swimming", "gymnastics", "soccer"))
+                .noteBooks(12)
                 .build();
         Student s3 = Student.builder()
                 .name("Emily")
@@ -29,6 +31,7 @@ public class StudentDataBase {
                 .gpa(4.0)
                 .gender("female")
                 .activities(Arrays.asList("swimming", "gymnastics", "aerobics"))
+                .noteBooks(10)
                 .build();
         Student s4 = Student.builder()
                 .name("Dave")
@@ -36,6 +39,7 @@ public class StudentDataBase {
                 .gpa(3.9)
                 .gender("male")
                 .activities(Arrays.asList("swimming", "gymnastics", "soccer"))
+                .noteBooks(9)
                 .build();
         Student s5 = Student.builder()
                 .name("Sophia")
@@ -43,6 +47,7 @@ public class StudentDataBase {
                 .gpa(3.6)
                 .gender("female")
                 .activities(Arrays.asList("swimming", "dancing", "football"))
+                .noteBooks(15)
                 .build();
         Student s6 = Student.builder()
                 .name("James")
@@ -50,6 +55,7 @@ public class StudentDataBase {
                 .gpa(3.9)
                 .gender("male")
                 .activities(Arrays.asList("swimming", "basketball", "baseball", "football"))
+                .noteBooks(14)
                 .build();
 
         return Arrays.asList(s1, s2, s3, s4, s5, s6);

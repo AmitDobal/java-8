@@ -15,6 +15,7 @@ public class Student {
     private double gpa;
     private String gender;
     List<String> activities = new ArrayList<>();
+    private int noteBooks;
 
     public Student(String name) {
         this.name = name;
